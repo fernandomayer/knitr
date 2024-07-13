@@ -53,9 +53,8 @@ all_patterns = list(
     inline.comment = '^###[.].*')
 )
 
-## .sep.label = '^(#|--)+\\s*(@knitr|----+)(.*?)-*\\s*$'  # pattern for code chunks in an R script
 # pattern for code chunks in an R script
-.sep.label = '^(#|--)+\\s*(@knitr|----+)\\s*(\\w.*\\w)-*\\s*$'
+.sep.label = '^(#|--)+\\s*(@knitr|----+)?\\s*(\\w.*\\w)?-*\\s*$'
 
 # initial pattern list
 .pat.init = list(
